@@ -3,7 +3,7 @@ $name = $_POST['name'];
 $email = $_POST['email'];
 $password = $_POST['password'];
 
-require_once("./initiate.php");
+require_once("../initiate.php");
 
 
     // $con = new mysqli('localhost','root','', 'final');

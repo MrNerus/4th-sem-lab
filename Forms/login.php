@@ -1,3 +1,6 @@
+<!-- outline:
+This is login UI. It submits data to loginCon.php using post request.  -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +14,7 @@
 
     <div class="container">
         <div class="login-box">
-            <form action="loginCon.php" method="POST">
+            <form action="logincon.php" method="POST">
                 <div class="page-box">
                     <div class="login-title">
                         <h2 class="loginTitle-text">Login</h2>
@@ -56,7 +59,6 @@
             </form>
         </div>
     </div>
-    <!-- <script src="script.js"></script> -->
     <script src="login.js"></script>
 </body>
 

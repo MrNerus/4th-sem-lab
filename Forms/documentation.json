@@ -1,0 +1,47 @@
+{
+    "admin": 
+    {
+        "adminreg.php": 
+        {
+            "type": "UI",
+            "description": "The portal where admin register",
+            "URL": "/Forms/adminreg.php"
+        },
+        "admincon.php":
+        {
+            "type": "Server Logic",
+            "description": "Post request is sent here from adminreg.php. After all security checks, form is inserted into database.",
+            "URL": "/Forms/admincon.php"
+        }
+    },
+    "student": 
+    {
+        "reg.php":
+        {
+            "type": "UI",
+            "description": "Form for student",
+            "URL": "/Forms/reg.php"
+        },
+        "regcon.php":
+        {
+            "type": "Server Logic",
+            "description": "Post request is sent here from reg.php. After all security checks, form is inserted into database.",
+            "URL": "/Forms/regcon.php"
+        }
+    },
+    "login": 
+    {
+        "login.php":
+        {
+            "type": "UI",
+            "description": "Student or server operator can log in",
+            "URL": "/Forms/login.php"
+        },
+        "logincon.php":
+        {
+            "type": "Server Logic",
+            "description": "If data from login.php is in admindata, log him to admin, if form data is in reg, log him to student, else, don't log in",
+            "URL": "/Forms/logincon.php"
+        }
+    }
+}

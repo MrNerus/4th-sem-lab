@@ -9,7 +9,7 @@
   </head>
   <body>
     <h1>Registration Form</h1>
-    <a href="./admincon.php">Admin</a>
+    <a href="./adminreg.php">Admin</a>
     <form action="./regcon.php" method="post">
       <label for="name">Name:</label>
       <input type="text" id="name" name="name" required>
