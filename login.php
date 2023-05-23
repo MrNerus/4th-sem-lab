@@ -1,4 +1,3 @@
-<!-- trying git fork -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +11,7 @@
 
     <div class="container">
         <div class="login-box">
-            <form action="#">
+            <form action="loginCon.php" method="POST">
                 <div class="page-box">
                     <div class="login-title">
                         <h2 class="loginTitle-text">Login</h2>
@@ -40,7 +39,7 @@
 
                     <div class="page password-page">
                         <div class="input-box">
-                            <input type="password" class="password"
+                            <input type="password" class="password" name="password"
                              required>
                             <label>Enter your password</label>
                         </div>
@@ -60,4 +59,5 @@
     <!-- <script src="script.js"></script> -->
     <script src="login.js"></script>
 </body>
+
 </html>

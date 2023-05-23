@@ -1,12 +1,14 @@
-<!-- trying git fork -->
 <?php
 $name = $_POST['name'];
 $email = $_POST['email'];
 $password = $_POST['password'];
 
+require_once("./initiate.php");
 
-    $con = mysqli_connect('localhost','root','');
 
+    // $con = new mysqli('localhost','root','', 'final');
+
+    // // This is used to check connection
     // if($con){
     //     echo "Connection succesfull";
     // }
@@ -14,17 +16,22 @@ $password = $_POST['password'];
     //     "no connection";
     // }
 
-    // echo $_POST;
-    // foreach ($variable as $key => $value) {
-    //     # code...
-    // }
 
-    mysqli_select_db($con, 'final');
+    $validationQuery = "SELECT * FROM reg WHERE email = '$email'";
+    $con->query($validationQuery);
+    if ($con->query($validationQuery) === true) {
+        echo "User Already Exist";
+    }
+    else {
+        $registrationQuery = "INSERT INTO reg (name, email, password) VALUES ('$name', '$email', '$password')";
+        if ($con->query($registrationQuery)) {
+            echo "Registration Sucessfull.";
 
-    $validationQuery = "SELECT * FROM reg WHERE email = $email";
-    // mysqli_query($con, $validationQuery );
-    $something = mysqli_execute_query($con,$validationQuery );
-    echo $something;
+        } else {
+            echo "Something Went Wrong.";
+        }
+
+    }
 
     
 

@@ -1,4 +1,3 @@
-// trying git fork
 const pageBox = document.querySelector('.page-box');
 const btnNext = document.querySelector('.btn-next');
 const btnBack = document.querySelector('.btn-back');

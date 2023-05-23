@@ -1,4 +1,4 @@
-<!-- trying git fork -->
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -10,7 +10,7 @@
   <body>
     <h1>Registration Form</h1>
     <a href="./admincon.php">Admin</a>
-    <form action="" method="post">
+    <form action="./regcon.php" method="post">
       <label for="name">Name:</label>
       <input type="text" id="name" name="name" required>
       
